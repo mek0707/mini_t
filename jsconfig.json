@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // เพิ่ม baseUrl ที่นี่
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
