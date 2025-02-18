@@ -67,6 +67,7 @@ export default async function handler(req, res) {
   try {
     if (req.method === 'GET') {
       const messages = await Message.find().sort({ timestamp: 1 });
+      console.log("MongoDB URI:", MONGODB_URI);
       return res.status(200).json(messages);
     }
 
