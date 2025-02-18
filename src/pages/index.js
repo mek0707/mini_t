@@ -20,7 +20,7 @@ export default function Home() {
         <div className="bg-white bg-opacity-40 rounded-xl p-4">
           <div className="text-white font-bold">
             Welcome!{" "}
-            <span onClick={() => router.push("/home/test")} className="text-white hover:text-yellow-500 hover:cursor-pointer">
+            <span onClick={() => router.push("/home/example_work")} className="text-white hover:text-yellow-500 hover:cursor-pointer">
               {">"}
             </span>
           </div>

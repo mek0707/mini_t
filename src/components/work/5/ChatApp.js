@@ -202,7 +202,7 @@ const ChatApp = () => {
     fetchMessages();
 
     // ตั้ง interval ให้โหลดข้อความทุก 3 วินาที (อัปเดต real-time)
-    const interval = setInterval(fetchMessages, 3000);
+    const interval = setInterval(fetchMessages, 10000);
     return () => clearInterval(interval); // ล้าง interval เมื่อ component ถูก unmount
   }, []);
 
@@ -255,7 +255,7 @@ const ChatApp = () => {
         </div>
       </div>
       <div className="h-[30vh] overflow-auto col-span-1 dark:bg-slate-400 w-full">
-        <span className="col-span-2 sticky top-0 dark:bg-white w-full dark:text-black flex justify-center p-4">Chat Messages</span>
+        <span className="col-span-2 sticky top-0 dark:bg-white w-full dark:text-black flex justify-center p-4 bg-gray-200">Chat Messages</span>
         <div className="p-4">
           <ul>
             {messages.map((msg) => (
