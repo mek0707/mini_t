@@ -74,17 +74,17 @@
 //   });
 // });
 
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-// เชื่อมต่อกับ MongoDB Atlas
-mongoose
-  .connect("mongodb+srv://wongsatorn0987279538:<db_password>@cluster0.kknvm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((err) => {
-    console.error("Error connecting to MongoDB:", err);
-  });
+// // เชื่อมต่อกับ MongoDB Atlas
+// mongoose
+//   .connect("", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => {
+//     console.log("Connected to MongoDB");
+//   })
+//   .catch((err) => {
+//     console.error("Error connecting to MongoDB:", err);
+//   });
