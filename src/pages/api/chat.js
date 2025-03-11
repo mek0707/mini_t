@@ -45,8 +45,8 @@
 
 import mongoose from 'mongoose';
 
-// const MONGODB_URI = process.env.MONGODB_URI || 'your_mongodb_connection_string';
-const MONGODB_URI = "mongodb+srv://wongsatorn0987279538:RkIPWb5QsSpyKI4A@cluster0.kknvm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const MONGODB_URI = process.env.MONGODB_URI || 'your_mongodb_connection_string';
+// const MONGODB_URI = "mongodb+srv://wongsatorn0987279538:RkIPWb5QsSpyKI4A@cluster0.kknvm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 // เชื่อมต่อ MongoDB (ถ้ายังไม่ได้เชื่อม)
 if (!mongoose.connections[0].readyState) {
   mongoose.connect(MONGODB_URI, {
